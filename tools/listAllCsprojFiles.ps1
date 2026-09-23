@@ -1,0 +1,1 @@
+(Get-ChildItem -Path "./**.csproj" -recurse).FullName | resolve-path -relative | out-file Projects.txt
