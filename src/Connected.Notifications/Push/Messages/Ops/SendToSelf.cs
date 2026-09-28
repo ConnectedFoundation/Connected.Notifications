@@ -18,6 +18,7 @@ internal sealed class SendToSelf(IAuthenticationService authentication, IPushMes
 			f.Title = Dto.Title;
 			f.Body = Dto.Body;
 			f.Url = Dto.Url;
+			f.MessageKey = Dto.MessageKey;
 		}));
 	}
 }

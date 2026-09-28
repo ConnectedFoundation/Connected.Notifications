@@ -9,4 +9,5 @@ internal interface IDeliverPushMessageDto
 	string Title { get; set; }
 	string Body { get; set; }
 	string? Url { get; set; }
+	string? MessageKey { get; set; }
 }
