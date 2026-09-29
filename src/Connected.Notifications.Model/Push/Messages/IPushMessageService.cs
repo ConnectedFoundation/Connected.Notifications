@@ -21,4 +21,13 @@ public interface IPushMessageService
 	/// </remarks>
 	[ServiceOperation(ServiceOperationVerbs.Post)]
 	Task SendToSelf(ISendPushMessageToSelfDto dto);
+
+	/// <summary>
+	/// Sends a push notification to every identity currently subscribed to notifications.
+	/// </summary>
+	/// <remarks>
+	/// No <c>[ServiceOperation]</c>, for the same reason as <see cref="Send"/>: published, any signed-in
+	/// user could push to everyone.
+	/// </remarks>
+	Task SendBroadcast(ISendBroadcastPushMessageDto dto);
 }
