@@ -50,7 +50,8 @@ internal sealed class Send(INotificationPreferenceService preferences, ISubscrip
 			Subscription = f.Id,
 			Title = Dto.Title,
 			Body = Dto.Body,
-			Url = Dto.Url
+			Url = Dto.Url,
+			MessageKey = Dto.MessageKey
 		}).ToList();
 
 		foreach (var delivery in deliveries)

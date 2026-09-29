@@ -9,4 +9,5 @@ internal sealed class DeliverPushMessageDto
 	public string Title { get; set; } = string.Empty;
 	public string Body { get; set; } = string.Empty;
 	public string? Url { get; set; }
+	public string? MessageKey { get; set; }
 }

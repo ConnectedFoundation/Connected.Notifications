@@ -50,7 +50,8 @@ internal sealed class PushMessageDeliveryQueueAction(PushServiceClient client, I
 			tag = Message.Id.ToString(),
 			title = Dto.Title,
 			body = Dto.Body,
-			url = Dto.Url
+			url = Dto.Url,
+			key = Dto.MessageKey
 		}, PayloadOptions);
 
 		try
